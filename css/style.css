@@ -1,0 +1,69 @@
+/*Reset CSS*/
+* {
+    margin: 0;
+    padding: 0;
+}
+.txtcenter{
+    text-align: center;
+}
+.tablette, .desktop, .desktopG{
+    text-align: center;
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}   
+
+.inner{
+        width: 100%;
+    }
+
+@media (min-width: 768px){
+
+    .img {
+        width: 49%;
+        display: inline-block;
+    }
+    .tablette{
+        display: block;
+    }
+    .telephone{
+        display: none;
+    }
+
+}
+
+@media (min-width: 970px){
+
+    .inner{
+        width: 970px;
+        margin: auto;
+    }
+    .img {
+        width: 49%;
+        height: auto;
+    }
+    .desktop{
+        display: block;
+    }
+    .tablette{
+        display: none;
+    }
+}
+
+@media (min-width: 1370px){
+
+    .img {
+        width: 24%;
+        height: auto;
+        display: inline-block; 
+    }
+    .desktop{
+        display: none;
+    }
+    .desktopG{
+        display: block;
+    }
+}
